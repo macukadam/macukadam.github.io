@@ -25,7 +25,7 @@ SECRET_KEY = 'fy@d@6!=@e--2uo4@!ajmuh0s@+zn#ym%tzs3%!t2!vd1sv@r('
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['macukadam.pythonanywhere.com']
+ALLOWED_HOSTS = ['macukadam.pythonanywhere.com', '127.0.0.1']
 
 
 # Application definition
@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'rest_framework',
 ]
 
 MIDDLEWARE = [
