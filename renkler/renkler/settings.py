@@ -28,10 +28,10 @@ DEBUG = True
 
 CORS_ORIGIN_ALLOW_ALL = True
 
-# CORS_ORIGIN_WHITELIST = (
-#        'http://9193451665a1.ngrok.io/',
-#        'macukadam.pythonanywhere.com'
-# )
+CORS_ORIGIN_WHITELIST = (
+       'http://9193451665a1.ngrok.io/',
+       'macukadam.pythonanywhere.com'
+)
 
 ALLOWED_HOSTS = ['macukadam.pythonanywhere.com', '127.0.0.1']
 
