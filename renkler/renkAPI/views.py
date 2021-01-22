@@ -3,7 +3,7 @@ import random
 from rest_framework.decorators import api_view
 
 
-COLOURS = [{'color':'White', 'hex':'#FFFFFF'}, 
+COLORS = [{'color':'White', 'hex':'#FFFFFF'}, 
             {'color':'Silver', 'hex':'#C0C0C0'}, 
             {'color':'Gray', 'hex':'#808080'}, 
             {'color':'Black', 'hex':'#000000'}]
@@ -12,7 +12,7 @@ CORRECT_COLOR = ''
 
 @api_view(['GET'])
 def chose_color(request):
-    CORRECT_COLOR =random.choice(COLOURS)
+    CORRECT_COLOR =random.choice(COLORS)
     return JsonResponse({'chosen_color':CORRECT_COLOR})
 
 @api_view(['POST', 'GET'])
