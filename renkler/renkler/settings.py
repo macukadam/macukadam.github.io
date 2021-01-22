@@ -24,17 +24,10 @@ SECRET_KEY = 'fy@d@6!=@e--2uo4@!ajmuh0s@+zn#ym%tzs3%!t2!vd1sv@r('
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
-
-
 CORS_ORIGIN_ALLOW_ALL = True
+CORS_ALLOW_CREDENTIALS = False
 
-# CORS_ORIGIN_WHITELIST = (
-#        'http://9193451665a1.ngrok.io/',
-#        'macukadam.pythonanywhere.com'
-# )
-
-ALLOWED_HOSTS = ['macukadam.pythonanywhere.com', '127.0.0.1']
-
+ALLOWED_HOSTS = ['macukadam.pythonanywhere.com', '127.0.0.1', 'http://9193451665a1.ngrok.io/']
 
 # Application definition
 
