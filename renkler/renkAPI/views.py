@@ -3,7 +3,11 @@ import random
 from rest_framework.decorators import api_view
 
 
-COLOURS = [{'White':'#FFFFFF'}, {'Silver':'#C0C0C0'}, {'Gray':'#808080'}, {'Black':'#000000'}]
+COLOURS = [{'color':'White', 'hex':'#FFFFFF'}, 
+            {'color':'Silver', 'hex':'#C0C0C0'}, 
+            {'color':'Gray', 'hex':'#808080'}, 
+            {'color':'Black', 'hex':'#000000'}]
+
 CORRECT_COLOR = ''
 
 @api_view(['GET'])
