@@ -24,4 +24,4 @@ def index(request):
         else:
             return JsonResponse({'result':'incorrect'})
     else: 
-        return JsonResponse({'color':random.choice(COLOURS)})
+        return JsonResponse({'color':random.choice(COLORS)})
