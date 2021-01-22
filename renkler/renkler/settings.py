@@ -26,12 +26,12 @@ SECRET_KEY = 'fy@d@6!=@e--2uo4@!ajmuh0s@+zn#ym%tzs3%!t2!vd1sv@r('
 DEBUG = True
 
 
-CORS_ORIGIN_ALLOW_ALL = False
+CORS_ORIGIN_ALLOW_ALL = True
 
-CORS_ORIGIN_WHITELIST = (
-       'http://9193451665a1.ngrok.io/',
-       'macukadam.pythonanywhere.com'
-)
+# CORS_ORIGIN_WHITELIST = (
+#        'http://9193451665a1.ngrok.io/',
+#        'macukadam.pythonanywhere.com'
+# )
 
 ALLOWED_HOSTS = ['macukadam.pythonanywhere.com', '127.0.0.1']
 
