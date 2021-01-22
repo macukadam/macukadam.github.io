@@ -25,6 +25,8 @@ SECRET_KEY = 'fy@d@6!=@e--2uo4@!ajmuh0s@+zn#ym%tzs3%!t2!vd1sv@r('
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
+CORS_ORIGIN_ALLOW_ALL = DEBUG
+
 ALLOWED_HOSTS = ['macukadam.pythonanywhere.com', '127.0.0.1']
 
 
