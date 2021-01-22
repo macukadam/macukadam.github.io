@@ -12,13 +12,13 @@ CORRECT_COLOR = ''
 
 @api_view(['GET'])
 def chose_color(request):
-    CORRECT_COLOR =random.choice(COLORS)
+    CORRECT_COLOR =random.choice(COLORS)['color']
     return JsonResponse({'chosen_color':CORRECT_COLOR})
 
 @api_view(['POST', 'GET'])
 def index(request):
     if request.method == 'POST':
-        color = request.POST.get('color')
+        color = request.POST.get('color')['color']
         if (color == CORRECT_COLOR):
             return JsonResponse({'result':'correct'})
         else:
