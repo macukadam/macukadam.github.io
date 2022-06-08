@@ -1,0 +1,17 @@
+[package]
+name = "macro_engine"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+macroquad = "0.3.16"
+wee_alloc = "0.4.5"
+
+[profile.dev]
+lto = true
+opt-level = "s"
+
+# [features]
+# default = ["wee_alloc"]
