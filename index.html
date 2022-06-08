@@ -2,11 +2,10 @@
 
 <head>
     <meta charset="utf-8">
-    <title>TITLE</title>
+    <title>Shapes</title>
+    <link rel="stylesheet" type="" href="index.css">
     <style>
-        html,
-        body,
-        canvas {
+      canvas {
             margin: 0px;
             padding: 0px;
             width: 100%;
@@ -14,12 +13,25 @@
             background: black;
             z-index: 0;
         }
+      a {
+    color: #fff;
+}
     </style>
 </head>
 
 <body>
+  <div class="bgimg">
+  <div class="topleft">
+    <p><a target="_blank" href="https://github.com/macukadam/macukadam.github.io">GitHub</a></p>
+  </div>
+  <div class="middle">
+    <h1>WASM SHAPES</h1>
     <canvas id="glcanvas" tabindex='1'></canvas>
-    <!-- Minified and statically hosted version of https://github.com/not-fl3/macroquad/blob/master/js/mq_js_bundle.js -->
+  </div>
+  <div class="bottomleft">
+  </div>
+</div>  
+    <script src="index.js"></script>
     <script src="https://not-fl3.github.io/miniquad-samples/mq_js_bundle.js"></script>
     <script>load("macro_engine.wasm");</script> <!-- Your compiled wasm file -->
 </body>
